@@ -8,7 +8,7 @@ from keras.preprocessing.image import img_to_array
 from keras import image
 
 import cv2
-import numpy to np
+import numpy as np
 
 face_classifier = cv2.CascadeClassifier(r'E:\Programming\facial recog\haarcascade_frontalface_default.xml')
 classifier =load_model(r'E:\Programming\facial recog\model.h5')

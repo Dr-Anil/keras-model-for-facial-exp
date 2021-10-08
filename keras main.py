@@ -34,6 +34,9 @@ while True:
         roi_gray = gray[y:y+h,x:x+w]
         roi_gray = cv2.resize(roi_gray,(48,48),interpolation=cv2.INTER_AREA)
 
+# //        cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,255),2)
+# //        roi_gray = gray[y:y+h,x:x+w]
+# //        roi_gray = cv2.resize(roi_gray,(48,48),interpolation=cv2.INTER_AREA)
 
 
         if np.sum([roi_gray])!=0:

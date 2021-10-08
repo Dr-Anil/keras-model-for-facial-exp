@@ -22,7 +22,7 @@ while True:
 
     for (x,y,w,h) in faces:
         cv2.rectangle(frame,(x,y),(x+w,y+h))
-        roi_gray = [y:y+h,x:x+w]
+        roi_gray = gray[y:y+h,x:x+w]
         roi_gray = cv2.resize(roi_gray,(48,48),interpolation=cv2.INTER_AREA)
 
 

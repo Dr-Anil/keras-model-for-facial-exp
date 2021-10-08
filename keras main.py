@@ -41,7 +41,7 @@ while True:
             roi = img_to_array(roi)
             roi = np.expand_dims(roi,axis=0)
 
-            prediction = classifier.predict(roi)
+            prediction = classifier.predict(roi)[0]
             label=emotion_labels[prediction]
             label_position  = (x,y)
             cv2.putText(frame,label,label_position,cv2.FONT_HERSHEY_SIMPLEX,1)

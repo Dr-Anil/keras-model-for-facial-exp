@@ -43,7 +43,7 @@ while True:
             cv2.putText(frame,label,label_position,cv2.FONT_HERSHEY_SIMPLEX,1)
         else:
             cv2.putText(frame,'No Faces',(30,80),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0),2)
-    cv2.('Emotion Detector',frame)
+    cv2.imshow('Emotion Detector',frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
